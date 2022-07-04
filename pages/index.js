@@ -37,7 +37,7 @@ export default function Home({propertiesForSale, propertiesForRent}) {
         imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4'
       />
       <Flex flexWrap={'wrap'}>
-        {propertiesForRent.map((property)=> <Property property={property} ket={property.key}/>)}
+        {propertiesForRent.map((property)=> <Property property={property} key={property.key}/>)}
       </Flex>
 
       <Banner
@@ -51,7 +51,7 @@ export default function Home({propertiesForSale, propertiesForRent}) {
         imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008'
       />
       <Flex flexWrap={'wrap'}>
-        {propertiesForSale.map((property)=> <Property property={property} ket={property.key}/>)}
+        {propertiesForSale.map((property)=> <Property property={property} key={property.key}/>)}
       </Flex>
     </Box>
   )
